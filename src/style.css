@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+  font-style: normal;
+}
+body {
+  background-color: rgba(42, 46, 48, 1);
+}
+@media only screen and (max-width: 600px) {
+  .header-camera {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 1em;
+    color: white;
+  }
+  .header-gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 1em;
+    color: white;
+  }
+
+  .camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hasPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  .allCamera {
+    width: 100vw;
+    height: 100vh;
+  }
+  video {
+    max-width: 100%;
+    height: 70vh;
+  }
+  canvas {
+    max-width: 100%;
+  }
+  .take-photo-button {
+    width: 342px;
+    height: 70px;
+    padding: 24px 16px 24px 16px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+  .gallery-button {
+    cursor: pointer;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .camera-button {
+    cursor: pointer;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .gallery-img {
+    width: 163px;
+    height: 139px;
+    margin: 1rem;
+    border-radius: 4px;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    background: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+  }
+  .image-div {
+    position: relative;
+  }
+  .none {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-camera {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem;
+    color: white;
+  }
+  .header-gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem;
+    color: white;
+  }
+  .gallery-button {
+    padding: 20px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .camera-button {
+    padding: 20px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
+  video {
+    width: 50%;
+  }
+  canvas {
+    width: 50%;
+  }
+  .hasPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
+
+  .take-photo-button {
+    width: 342px;
+    height: 70px;
+    padding: 24px 16px 24px 16px;
+    border-radius: 4px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 100;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .gallery-img {
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 4px;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    background: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+  }
+  .image-div {
+    position: relative;
+  }
+}
