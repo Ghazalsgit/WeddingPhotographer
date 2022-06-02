@@ -24,7 +24,7 @@ function Gallery() {
         <h1>Gallery</h1>
       </div>
       <div className="gallery">
-        {images.map((image) => {
+        {images && images.map((image) => {
           return (
             <div className="image-div">
               <button onClick={() => removeImage(image.id)} className="close">
